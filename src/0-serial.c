@@ -2,11 +2,18 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include "../include/ioutils.h"
 
 // #define NX 1200         // Total number of spatial points // originally 400
 // #define NSTEPS 1000   // Number of time steps
+#ifndef NX
 #define NX 12000         // Total number of spatial points // originally 400
+#endif
+
+#ifndef NSTEPS
 #define NSTEPS 10000   // Number of time steps
+#endif
+
 #define DX 1.0         // Spatial step size
 #define DT 0.5         // Time step size (should satisfy the CFL condition)
 #define PI 3.141592653589793
@@ -41,18 +48,6 @@ void update_E(double *E, double *H) {
     }
     // Simple absorbing boundary condition:
     E[0] = E[1];
-}
-
-void save_field_to_file(const char* filename, double *E, int length) {
-    FILE *fp = fopen(filename, "w");
-    if (fp == NULL) {
-        fprintf(stderr, "Error opening file %s for writing\n", filename);
-        return;
-    }
-    for (int i = 0; i < length; i++) {
-        fprintf(fp, "%.10f\n", E[i]);
-    }
-    fclose(fp);
 }
 
 int main() {

@@ -1,0 +1,3 @@
+[ ]: node number(--ntasks-per-node) v.s. thread number (OMP_NUM_THREADS) benchmarking, visualizing as a Heat Map.
+[ ]: GPU offloading benchmarking, comparing to OpenMP ver.
+[ ]: Scalability benchmarking (strong&weak).
