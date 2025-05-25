@@ -12,4 +12,5 @@ module load rocm
 amdclang -fopenmp -fopenmp-targets=amdgcn-amdhsa \
   -Xopenmp-target=amdgcn-amdhsa -march=gfx90a \
   -o omp_gpu omp_gpu.c -lm
-srun --ntasks=1 ./omp_gpu 
+# srun --ntasks=1 ./omp_gpu 
+rocprof --hsa-trace --timestamp on -o trace_output.csv ./omp_gpu
