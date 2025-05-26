@@ -6,8 +6,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+#ifndef ENABLE_IO
 #define ENABLE_IO
+#endif
+
+#ifndef DEBUG_OUTPUT
 // #define DEBUG_OUTPUT
+#endif
 
 #ifndef NX
 #define NX 12000 // Total number of spatial points // originally 400
@@ -26,13 +31,13 @@ int rank, nprocs;
 
 // Domain Decomposition
 int local_len, start_offset;
-inline int stripe_len(int rank, int nprocs) {
+static inline int stripe_len(int rank, int nprocs) {
   int n_elem = NX / nprocs;
   int remainder = NX % nprocs;
   return (rank < remainder) ? n_elem + 1 : n_elem;
 }
 
-inline int stripe_start(int rank, int nprocs) {
+static inline int stripe_start(int rank, int nprocs) {
   int n_elem = NX / nprocs;
   int remainder = (NX % nprocs);
   return (rank < remainder) ? (n_elem + 1) * rank
@@ -91,7 +96,7 @@ double *gathering_E(double *E_local, double *E) {
 void update_H(double *E, double *H) {
   // Update H from 0 to NX-2 (using forward differences)
 #pragma omp parallel for schedule(runtime)
-  for (int i = 0; i < local_len; i++) {
+  for (int i = 0; i < local_len - 1; i++) {
     H[i] = H[i] + (DT / DX) * (E[i + 1] - E[i]);
   }
 
@@ -111,7 +116,6 @@ void update_E(double *E, double *H) {
     E[i] = E[i] + (DT / DX) * (H[i] - H[i - 1]);
   }
   if (rank == 0) {
-
     E[0] = E[1];
   } else {
     int i = 0;
@@ -146,15 +150,15 @@ int main(int argc, char **argv) {
     E = calloc(NX, sizeof(double));
 #endif
 
-  // The first element is for holding left neighbor's halo
-  // shift the start ptr to the right
-  E_local += 1;
-  H_local += 1;
-
   if (E_local == NULL || H_local == NULL) {
     fprintf(stderr, "Memory allocation failed in rank: %d\n", rank);
     MPI_Abort(MPI_COMM_WORLD, 1);
   }
+
+  // The first element is for holding left neighbor's halo
+  // shift the start ptr to the right
+  E_local += 1;
+  H_local += 1;
 
 #ifdef ENABLE_IO
   char *log_path_prefix = NULL;
