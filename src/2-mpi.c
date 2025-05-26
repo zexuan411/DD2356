@@ -7,11 +7,11 @@
 #include <string.h>
 
 #ifndef ENABLE_IO
-#define ENABLE_IO
+//#define ENABLE_IO
 #endif
 
 #ifndef DEBUG_OUTPUT
-// #define DEBUG_OUTPUT
+#define DEBUG_OUTPUT
 #endif
 
 #ifndef NX
@@ -131,7 +131,12 @@ int main(int argc, char **argv) {
 
 #ifdef DEBUG_OUTPUT
   if (rank == 0) {
-    int omp_num_threads = omp_get_num_threads();
+    int omp_num_threads;
+#pragma omp parallel
+    {
+#pragma omp single
+      omp_num_threads = omp_get_num_threads();
+    }
     printf("omp_num_threads: %d\n", omp_num_threads);
     printf("MPI Number of Processes: %d\n", nprocs);
   }
@@ -175,11 +180,6 @@ int main(int argc, char **argv) {
 
   // Initialize fields
   initialize_fields(E_local, H_local);
-
-#ifdef DEBUG_OUTPUT
-  if (rank == 0)
-    printf("initialization finished\n");
-#endif
 
 #ifdef ENABLE_IO
   char *fname_buf = NULL;
