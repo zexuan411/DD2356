@@ -22,6 +22,7 @@
           llvmPackages.openmp
           mpi
           clang-tools
+          shfmt
         ];
       };
   };
