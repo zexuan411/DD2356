@@ -1,0 +1,69 @@
+cc -DNX=12000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+--ntasks-per-node=1, --cpus-per-task=64
+test: 1
+omp_num_threads: 64
+MPI Number of Processes: 4
+computing time: 0.277043
+test: 1, done
+test: 2
+omp_num_threads: 64
+MPI Number of Processes: 4
+computing time: 0.271172
+test: 2, done
+test: 3
+omp_num_threads: 64
+MPI Number of Processes: 4
+computing time: 0.279283
+test: 3, done
+-------
+--ntasks-per-node=2, --cpus-per-task=32
+test: 1
+omp_num_threads: 32
+MPI Number of Processes: 8
+computing time: 0.213213
+test: 1, done
+test: 2
+omp_num_threads: 32
+MPI Number of Processes: 8
+computing time: 0.208837
+test: 2, done
+test: 3
+omp_num_threads: 32
+MPI Number of Processes: 8
+computing time: 0.210788
+test: 3, done
+-------
+--ntasks-per-node=4, --cpus-per-task=16
+test: 1
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 0.214874
+test: 1, done
+test: 2
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 0.200825
+test: 2, done
+test: 3
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 0.215187
+test: 3, done
+-------
+--ntasks-per-node=8, --cpus-per-task=8
+test: 1
+omp_num_threads: 8
+MPI Number of Processes: 32
+computing time: 0.255728
+test: 1, done
+test: 2
+omp_num_threads: 8
+MPI Number of Processes: 32
+computing time: 0.205500
+test: 2, done
+test: 3
+omp_num_threads: 8
+MPI Number of Processes: 32
+computing time: 0.209799
+test: 3, done
+-------

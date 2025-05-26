@@ -22,7 +22,7 @@ for pnum in 4 8 16 32; do
 
     for t in $(seq 1 3); do
         echo "test: ${t}"
-        srun --ntasks-per-node="${pnum_pernode}" --cpus-per-task="${tnum}" build/2-mpi.o
+        srun --ntasks=${pnum} --ntasks-per-node="${pnum_pernode}" --cpus-per-task="${tnum}" build/2-mpi.o
         echo "test: ${t}, done"
     done
 
