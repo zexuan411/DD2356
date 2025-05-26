@@ -28,3 +28,23 @@ done
 
 avg_time=$(echo "scale=6; $total_time / $NUM_RUNS" | bc)
 echo "Average GPU simulation time over $NUM_RUNS runs: $avg_time seconds"
+
+
+# #profiling
+# #!/bin/bash
+# #SBATCH -A edu25.dd2356
+# #SBATCH --time=00:10:00
+# #SBATCH -p gpu
+# #SBATCH -N 1
+# #SBATCH -e error_gpu
+# #SBATCH -o output_gpu
+# #SBATCH --gpus=1
+# #SBATCH --mail-user=czexuan@kth.se
+# #SBATCH --mail-type=START,END,FAIL
+
+# module load rocm
+# amdclang -O3 -fopenmp -fopenmp-targets=amdgcn-amdhsa \
+#   -Xopenmp-target=amdgcn-amdhsa -march=gfx90a \
+#   -o omp_gpu omp_gpu.c -lm
+# rocprof --hsa-trace --timestamp on --stats ./omp_gpu > gpu_profile.out
+
