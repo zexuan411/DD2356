@@ -1,0 +1,1054 @@
+cc -DNX=12000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+--ntasks-per-node=1, --cpus-per-task=16
+task: 1
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 0.155474
+task: 1 done
+task: 2
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 0.150661
+task: 2 done
+task: 3
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 0.151516
+task: 3 done
+task: 4
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 0.156596
+task: 4 done
+task: 5
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 0.156538
+task: 5 done
+-----
+--ntasks-per-node=2, --cpus-per-task=16
+task: 1
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 0.410137
+task: 1 done
+task: 2
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 0.171890
+task: 2 done
+task: 3
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 0.179753
+task: 3 done
+task: 4
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 0.177804
+task: 4 done
+task: 5
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 0.175064
+task: 5 done
+-----
+--ntasks-per-node=3, --cpus-per-task=16
+task: 1
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 0.214213
+task: 1 done
+task: 2
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 0.197815
+task: 2 done
+task: 3
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 2.098545
+task: 3 done
+task: 4
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 0.277274
+task: 4 done
+task: 5
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 0.295420
+task: 5 done
+-----
+--ntasks-per-node=4, --cpus-per-task=16
+task: 1
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 0.247819
+task: 1 done
+task: 2
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 0.255900
+task: 2 done
+task: 3
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 0.250785
+task: 3 done
+task: 4
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 0.247310
+task: 4 done
+task: 5
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 0.239021
+task: 5 done
+-----
+--ntasks-per-node=5, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 0.254839
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 0.234930
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 0.219818
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 0.245301
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 0.230986
+task: 5 done
+-----
+--ntasks-per-node=6, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 0.232034
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 0.213599
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 0.224876
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 0.365211
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 0.226246
+task: 5 done
+-----
+--ntasks-per-node=7, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 0.206068
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 0.204270
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 0.207413
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 0.189891
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 0.206339
+task: 5 done
+-----
+--ntasks-per-node=8, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 0.205745
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 0.207172
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 0.208830
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 0.216540
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 0.216895
+task: 5 done
+-----
+--ntasks-per-node=9, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 0.221391
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 0.215786
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 0.227331
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 0.227748
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 0.235096
+task: 5 done
+-----
+--ntasks-per-node=10, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 0.226203
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 0.230847
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 0.256704
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 0.230174
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 0.220218
+task: 5 done
+-----
+--ntasks-per-node=11, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 0.226382
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 0.224847
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 0.221345
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 0.217841
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 0.240063
+task: 5 done
+-----
+--ntasks-per-node=12, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 0.221462
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 0.225766
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 0.218492
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: Step created for StepId=10328988.58
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 0.209637
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: Step created for StepId=10328988.59
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 0.225339
+task: 5 done
+-----
+--ntasks-per-node=13, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 0.219448
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 0.199469
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 0.366173
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 0.199039
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 0.211590
+task: 5 done
+-----
+--ntasks-per-node=14, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 0.225116
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 0.224494
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 0.213347
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 0.216940
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 0.217436
+task: 5 done
+-----
+--ntasks-per-node=15, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 0.216824
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 0.216358
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 0.210990
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 0.220195
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 0.448975
+task: 5 done
+-----
+--ntasks-per-node=16, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 0.227008
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 0.222956
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 0.232308
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 0.210947
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 0.221110
+task: 5 done
+-----
+=====
+cc -DNX=192000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 192000
+--ntasks-per-node=1, --cpus-per-task=16
+task: 1
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 1.594824
+task: 1 done
+task: 2
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 1.602697
+task: 2 done
+task: 3
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 2.023916
+task: 3 done
+task: 4
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 1.602596
+task: 4 done
+task: 5
+srun: warning: can't run 1 processes on 4 nodes, setting nnodes to 1
+omp_num_threads: 16
+MPI Number of Processes: 1
+computing time: 1.598662
+task: 5 done
+-----
+cc -DNX=384000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 384000
+--ntasks-per-node=2, --cpus-per-task=16
+task: 1
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 1.678410
+task: 1 done
+task: 2
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 1.681125
+task: 2 done
+task: 3
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 1.680823
+task: 3 done
+task: 4
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 1.686042
+task: 4 done
+task: 5
+srun: warning: can't run 2 processes on 4 nodes, setting nnodes to 2
+omp_num_threads: 16
+MPI Number of Processes: 2
+computing time: 1.687894
+task: 5 done
+-----
+cc -DNX=576000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 576000
+--ntasks-per-node=3, --cpus-per-task=16
+task: 1
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 1.738288
+task: 1 done
+task: 2
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 1.732067
+task: 2 done
+task: 3
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 1.739388
+task: 3 done
+task: 4
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 1.750750
+task: 4 done
+task: 5
+srun: warning: can't run 3 processes on 4 nodes, setting nnodes to 3
+omp_num_threads: 16
+MPI Number of Processes: 3
+computing time: 1.737298
+task: 5 done
+-----
+cc -DNX=768000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 768000
+--ntasks-per-node=4, --cpus-per-task=16
+task: 1
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 1.807112
+task: 1 done
+task: 2
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 1.782335
+task: 2 done
+task: 3
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 1.785998
+task: 3 done
+task: 4
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 1.779566
+task: 4 done
+task: 5
+omp_num_threads: 16
+MPI Number of Processes: 4
+computing time: 1.803593
+task: 5 done
+-----
+cc -DNX=960000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 960000
+--ntasks-per-node=5, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 1.771564
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 1.784331
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 1.807279
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 1.767513
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 5 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 5
+computing time: 1.783902
+task: 5 done
+-----
+cc -DNX=1152000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 1152000
+--ntasks-per-node=6, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 1.788287
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 1.779758
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 1.785982
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 1.780774
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 6 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 6
+computing time: 1.801389
+task: 5 done
+-----
+cc -DNX=1344000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 1344000
+--ntasks-per-node=7, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 1.781006
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 1.746440
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 1.773491
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 1.774767
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 7 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 7
+computing time: 1.769948
+task: 5 done
+-----
+cc -DNX=1536000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 1536000
+--ntasks-per-node=8, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 1.801620
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 1.776489
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 1.775422
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 1.785972
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 8 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 8
+computing time: 1.780221
+task: 5 done
+-----
+cc -DNX=1728000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 1728000
+--ntasks-per-node=9, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 1.805635
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 1.793613
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 1.823024
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 1.813645
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 9 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 9
+computing time: 1.827017
+task: 5 done
+-----
+cc -DNX=1920000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 1920000
+--ntasks-per-node=10, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 1.791476
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 1.798368
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 1.976452
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 1.834674
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 10 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 10
+computing time: 1.824163
+task: 5 done
+-----
+cc -DNX=2112000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 2112000
+--ntasks-per-node=11, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 1.848848
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: Step created for StepId=10328988.131
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 1.830419
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 1.841901
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: Step created for StepId=10328988.133
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 1.866495
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 11 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 11
+computing time: 1.829092
+task: 5 done
+-----
+cc -DNX=2304000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 2304000
+--ntasks-per-node=12, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 1.874653
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 1.889176
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 1.905555
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 2.020116
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 12 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 12
+computing time: 1.938495
+task: 5 done
+-----
+cc -DNX=2496000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 2496000
+--ntasks-per-node=13, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 1.905061
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 1.878414
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 1.882426
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 1.887481
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 13 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 13
+computing time: 1.891530
+task: 5 done
+-----
+cc -DNX=2688000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 2688000
+--ntasks-per-node=14, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 1.903640
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 1.896922
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 1.899955
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 1.897193
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 14 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 14
+computing time: 1.886091
+task: 5 done
+-----
+cc -DNX=2880000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 2880000
+--ntasks-per-node=15, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 1.921533
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 1.916228
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 1.905377
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 1.922777
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 15 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 15
+computing time: 1.919340
+task: 5 done
+-----
+cc -DNX=3072000 -DNSTEPS=10000 -DDEBUG_OUTPUT  -lm -fopenmp -o build/2-mpi.o src/2-mpi.c build/ioutils.o
+input size: 3072000
+--ntasks-per-node=16, --cpus-per-task=16
+task: 1
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 1.921146
+task: 1 done
+task: 2
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: Step created for StepId=10328988.156
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 1.924745
+task: 2 done
+task: 3
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 1.923481
+task: 3 done
+task: 4
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+srun: Step created for StepId=10328988.158
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 1.926022
+task: 4 done
+task: 5
+srun: warning: can't honor --ntasks-per-node set to 1 which doesn't match the requested tasks 16 with the maximum number of requested nodes 4. Ignoring --ntasks-per-node.
+omp_num_threads: 16
+MPI Number of Processes: 16
+computing time: 1.970368
+task: 5 done
+-----

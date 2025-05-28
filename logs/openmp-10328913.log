@@ -1,0 +1,102 @@
+schedule:static;threads:16
+test: 1
+computing time: 0.160955
+test: 1 done
+test: 2
+computing time: 0.186648
+test: 2 done
+test: 3
+computing time: 0.167615
+test: 3 done
+-----
+schedule:static;threads:32
+test: 1
+computing time: 0.141999
+test: 1 done
+test: 2
+computing time: 0.159859
+test: 2 done
+test: 3
+computing time: 0.143796
+test: 3 done
+-----
+schedule:static;threads:64
+test: 1
+computing time: 0.159581
+test: 1 done
+test: 2
+computing time: 0.160542
+test: 2 done
+test: 3
+computing time: 0.158996
+test: 3 done
+-----
+=====
+schedule:dynamic;threads:16
+test: 1
+computing time: 27.734467
+test: 1 done
+test: 2
+computing time: 27.705225
+test: 2 done
+test: 3
+computing time: 27.830643
+test: 3 done
+-----
+schedule:dynamic;threads:32
+test: 1
+computing time: 17.079328
+test: 1 done
+test: 2
+computing time: 17.082081
+test: 2 done
+test: 3
+computing time: 17.135781
+test: 3 done
+-----
+schedule:dynamic;threads:64
+test: 1
+computing time: 11.586426
+test: 1 done
+test: 2
+computing time: 11.615797
+test: 2 done
+test: 3
+computing time: 11.605725
+test: 3 done
+-----
+=====
+schedule:guided;threads:16
+test: 1
+computing time: 0.941078
+test: 1 done
+test: 2
+computing time: 0.937053
+test: 2 done
+test: 3
+computing time: 0.939641
+test: 3 done
+-----
+schedule:guided;threads:32
+test: 1
+computing time: 0.998093
+test: 1 done
+test: 2
+computing time: 0.999879
+test: 2 done
+test: 3
+computing time: 1.001004
+test: 3 done
+-----
+schedule:guided;threads:64
+test: 1
+computing time: 1.327662
+test: 1 done
+test: 2
+computing time: 1.342963
+test: 2 done
+test: 3
+computing time: 1.344996
+test: 3 done
+-----
+=====

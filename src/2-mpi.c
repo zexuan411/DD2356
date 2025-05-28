@@ -172,6 +172,7 @@ int main(int argc, char **argv) {
     log_path_prefix = calloc(120, sizeof(char));
     if (log_path_prefix_raw != NULL) {
       strcpy(log_path_prefix, log_path_prefix_raw);
+      log_path_prefix[119] = '\0';
     } else {
       log_path_prefix[0] = '\0';
     }
