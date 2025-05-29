@@ -6,6 +6,7 @@ import glob
 from pathlib import Path
 import re
 from typing import Optional
+import time
 
 parser = argparse.ArgumentParser()
 parser.add_argument("dir", default=".", help="the path of output directory")
@@ -41,4 +42,5 @@ for d in datas:
     x = np.linspace(0.0, args.nx * args.dx, len(d[1]))
     ax.plot(x, d[1], label=d[0])
 ax.legend()
+fig.savefig(f"figures/validation-{int(time.time())}.png", dpi=150)
 plt.show()
