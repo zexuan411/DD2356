@@ -1,0 +1,55 @@
+#!/bin/bash
+#SBATCH -A edu25.dd2356
+#SBATCH --time=00:10:00
+#SBATCH -p gpu
+#SBATCH --cpus-per-task=16
+#SBATCH -N 1
+#SBATCH -o ./output/output_gpu
+#SBATCH -e ./output/output_gpu
+#SBATCH --mail-user=czexuan@kth.se
+#SBATCH --mail-type=START,END,FAIL
+
+cd $SLURM_SUBMIT_DIR 
+module load rocm
+amdclang -O3 -fopenmp -fopenmp-targets=amdgcn-amdhsa \
+  -Xopenmp-target=amdgcn-amdhsa -march=gfx90a \
+  -o 3-gpu /cfs/klemming/home/c/czexuan/DD2356/src/3-gpu.c -lm
+
+NUM_RUNS=5
+total_time=0
+
+for i in $(seq 1 $NUM_RUNS)
+do
+  echo "Run #$i"
+  output=$(srun --ntasks=1 --gpus=1 ./3-gpu)
+  echo "$output"
+  time_val=$(echo "$output" | grep "Simulation time" | awk '{print $3}')
+  total_time=$(echo "$total_time + $time_val" | bc)
+done
+
+avg_time=$(echo "scale=6; $total_time / $NUM_RUNS" | bc)
+echo "Average GPU simulation time over $NUM_RUNS runs: $avg_time seconds"
+
+rm -f 3-gpu
+
+
+# #!/bin/bash
+# #SBATCH -A edu25.dd2356
+# #SBATCH --time=00:10:00
+# #SBATCH -p gpu
+# #SBATCH -N 1
+# #SBATCH -e error_gpu
+# #SBATCH -o output_gpu
+# #SBATCH --gpus=1
+# #SBATCH --mail-user=czexuan@kth.se
+# #SBATCH --mail-type=START,END,FAIL
+
+# cd $SLURM_SUBMIT_DIR
+
+# module load rocm
+# amdclang -O3 -fopenmp -fopenmp-targets=amdgcn-amdhsa \
+#   -Xopenmp-target=amdgcn-amdhsa -march=gfx90a \
+#   -o omp_gpu /cfs/klemming/home/c/czexuan/DD2356/src/3-gpu.c -lm
+# rocprof --hsa-trace --timestamp on --stats ./omp_gpu > gpu_profile.out
+
+# rm -f omp_gpu
